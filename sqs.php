@@ -16,10 +16,6 @@ class SQS
 	public function getSecretKey() { return $this->__secretKey; }
 	public function getHost() { return $this->__host; }
 
-	public function getAccessKey() { return $this->__accessKey; }
-	public function getSecretKey() { return $this->__secretKey; }
-	public function getHost() { return $this->__host; }
-
 	protected $__verifyHost = true;
 	protected $__verifyPeer = true;
 
