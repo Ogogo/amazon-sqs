@@ -1,0 +1,18 @@
+{
+    "name": "ogogo/amazon-sqs",
+    "description": "Amazon SQS client for PHP",
+    "type": "library",
+    "license": "BSD-2-Clause",
+    "authors": [
+        {
+            "name": "Finbarr McCarthy",
+            "email": "finbarr@finbarr.org"
+        }
+    ],
+    "require": {
+        "php": ">=5.2.0"
+    },
+    "autoload": {
+        "classmap": ["SQS.php"]
+    }
+}
