@@ -12,11 +12,9 @@ class SQS
 	const INSECURE_ENDPOINT_EU_WEST = 'http://sqs.eu-west-1.amazonaws.com/';
 	const INSECURE_ENDPOINT_AP_SOUTHEAST = 'http://sqs.ap-southeast-1.amazonaws.com/';
 	
-  $config = $this->getServiceLocator()->get('config');
-
-  protected $__accessKey = $config['aws']['awsAccessKey'];
-  protected $__secretKey = $config['aws']['awsSecretKey'];
-	protected $__host;
+	public function getAccessKey() { return $this->__accessKey; }
+	public function getSecretKey() { return $this->__secretKey; }
+	public function getHost() { return $this->__host; }
 
 	public function getAccessKey() { return $this->__accessKey; }
 	public function getSecretKey() { return $this->__secretKey; }
